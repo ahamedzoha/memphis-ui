@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { ExampleComponent, ZButton } from 'memphis-ui'
+import { ExampleComponent } from 'memphis-ui'
+import { ZButton } from 'memphis-uix'
 import 'memphis-ui/dist/index.css'
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
   return (
     <div className="container" style={styles}>
       <ExampleComponent text="Create React Library Example 😄" />
-      <ZButton text="Howdy" />
+      <ZButton text="Howdy 😄" />
 
     </div>
   )
