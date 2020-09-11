@@ -1,5 +1,5 @@
 {
-  "name": "memphis-ui",
+  "name": "memphis-uix",
   "version": "0.0.1",
   "description": "A UI Component Library for React Web Apps!",
   "keywords": [
@@ -65,6 +65,7 @@
     "dist"
   ],
   "dependencies": {
+    "memphis-uix": "0.0.1",
     "node-sass": "^4.14.1"
   }
 }

@@ -1,13 +1,13 @@
 import React from 'react'
-import { ZButton } from 'memphis-ui'
+import { ZButton } from 'memphis-uix'
 
 export default {
-  title: 'Custom Button',
+  title: 'IM',
   component: ZButton
 }
 
 export const Custom = () => (
-  <ZButton>
+  <ZButton text="How's it going! 😄">
     How's it going!{' '}
     <span role='img' aria-label='smily'>
       😄

@@ -10,7 +10,7 @@ export const ZButton = ({ variant, children, ...rest }) => {
     fontSize: '14px'
   }
   return (
-    <button type='button' style={styles}>
+    <button type='button' style={styles} {...rest}>
       {children}
     </button>
   )
