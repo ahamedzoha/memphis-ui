@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ExampleComponent, ZButton, Card } from 'memphis-ui'
+import { ExampleComponent, MButton, Card } from 'memphis-ui'
 // import { ZButton } from 'memphis-uix'
 import 'memphis-ui/dist/index.css'
 
@@ -14,12 +14,12 @@ const App = () => {
   return (
     <div className='container' style={styles}>
       <ExampleComponent text='Create React Library Example 😄' />
-      <ZButton>
-        How's it going!
+      <MButton variant='primary'>
+        How's it going!{' '}
         <span role='img' aria-label='smily'>
           😄
         </span>
-      </ZButton>
+      </MButton>
       <Card heading='Card'>
         <div className='imge'></div>
         <div className='text'>Hello</div>

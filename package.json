@@ -66,6 +66,7 @@
   ],
   "dependencies": {
     "memphis-uix": "0.0.1",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "styled-components": "^5.2.0"
   }
 }
