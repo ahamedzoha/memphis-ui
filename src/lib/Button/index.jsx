@@ -9,6 +9,7 @@ const StyledButton = styled.button`
   border-radius: 4px;
   max-width: 200px;
   font-size: 14px;
+
   ${({ variant }) =>
     variant === 'primary'
       ? css`
@@ -32,17 +33,19 @@ const StyledButton = styled.button`
         `
       : variant === 'secondary'
       ? css`
+          background-color: #fff;
+          font-weight: 500;
+
           ${({ backgroundColor }) =>
             backgroundColor
               ? css`
-                  background-color: ${backgroundColor};
+                  border: 2px solid ${backgroundColor};
+                  color: ${backgroundColor};
                 `
               : css`
-                  background-color: #fff;
+                  border: 2px solid #e2136e;
+                  color: #e2136e;
                 `};
-          font-weight: 500;
-          color: #e2136e;
-          border: 2px solid #e2136e;
           &:hover {
             transition: 350ms;
             transition-timing-function: cubic-bezier(0.51, 0.67, 0.42, 1.02);
@@ -76,22 +79,19 @@ export const Button = ({
   </StyledButton>
 )
 
-Button.PropTypes = {
+Button.propTypes = {
   /**
    * Texts to show within the button (IS REQUIRED)
    */
   children: PropTypes.string.isRequired,
-
   /**
    * Define the type of the button
    */
   variant: PropTypes.string.isRequired,
-
   /**
    * Define custom color for the button
    */
   backgroundColor: PropTypes.string,
-
   /**
    * Optional OnClick event
    */
@@ -102,5 +102,9 @@ Button.defaultProps = {
   /**
    * Define the type of the button
    */
-  variant: 'primary'
+  variant: 'primary',
+  /**
+   * Event handler
+   */
+  onClick: undefined
 }
