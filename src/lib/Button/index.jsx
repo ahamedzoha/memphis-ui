@@ -1,7 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
-import { Secondary } from '../../stories/Button.stories'
 
 const StyledButton = styled.button`
   padding: 15px;
@@ -9,6 +8,9 @@ const StyledButton = styled.button`
   border-radius: 4px;
   max-width: 200px;
   font-size: 14px;
+  &:active {
+    transform: translateY(1px);
+  }
 
   ${({ variant }) =>
     variant === 'primary'
@@ -25,6 +27,14 @@ const StyledButton = styled.button`
           font-weight: 500;
           color: #fff;
 
+          &:disabled {
+            background-color: grey;
+            cursor: not-allowed;
+            &:active {
+              transform: translateY(0);
+            }
+          }
+
           &:hover {
             transition: 350ms;
             transition-timing-function: cubic-bezier(0.51, 0.67, 0.42, 1.02);
@@ -39,13 +49,23 @@ const StyledButton = styled.button`
           ${({ backgroundColor }) =>
             backgroundColor
               ? css`
-                  border: 2px solid ${backgroundColor};
+                  border: 1px solid ${backgroundColor};
                   color: ${backgroundColor};
                 `
               : css`
-                  border: 2px solid #e2136e;
+                  border: 1px solid #e2136e;
                   color: #e2136e;
                 `};
+
+          &:disabled {
+            border-color: grey;
+            color: grey;
+            cursor: not-allowed;
+            &:active {
+              transform: translateY(0);
+            }
+          }
+
           &:hover {
             transition: 350ms;
             transition-timing-function: cubic-bezier(0.51, 0.67, 0.42, 1.02);
@@ -87,11 +107,15 @@ Button.propTypes = {
   /**
    * Define the type of the button
    */
-  variant: PropTypes.string.isRequired,
+  variant: PropTypes.oneOf(['primary', 'secondary']).isRequired,
   /**
    * Define custom color for the button
    */
   backgroundColor: PropTypes.string,
+  /**
+   * pass disabled as a prop to disable button
+   */
+  disabled: PropTypes.bool,
   /**
    * Optional OnClick event
    */
@@ -107,4 +131,11 @@ Button.defaultProps = {
    * Event handler
    */
   onClick: undefined
+}
+
+Button.defaultProps = {
+  /**
+   * Default variant of button is primary
+   */
+  variant: 'primary'
 }
