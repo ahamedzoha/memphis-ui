@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 
 const StyledButton = styled.button`
+  cursor: pointer;
   padding: 15px;
   border: none;
   border-radius: 4px;
