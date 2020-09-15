@@ -17,8 +17,6 @@ There are two installations available.
 2. Entire library including storybook **(for development purposes only)** ==> See [Installation 2]
 
 <br />
-<br />
-<br />
 
 ### Installation 1 - via npm
 
@@ -34,8 +32,6 @@ Or
 npm install --save memphis-uix@latest
 ```
 
-<br />
-<br />
 <br />
 
 ### Installation 2 - Entire project
