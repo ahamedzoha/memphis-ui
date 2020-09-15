@@ -10,6 +10,8 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
+    "@storybook/addons": "^6.0.21",
+    "@storybook/theming": "^6.0.21",
     "memphis-ui": "file:..",
     "memphis-uix": "0.0.1",
     "node-sass": "^4.14.1",
