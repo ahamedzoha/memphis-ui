@@ -44,7 +44,7 @@ const StyledButton = styled.button`
         `
       : variant === 'secondary'
       ? css`
-          background-color: #fff;
+          background-color: rgba(255, 255, 255, 0);
           font-weight: 500;
 
           ${({ backgroundColor }) =>

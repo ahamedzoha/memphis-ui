@@ -1,6 +1,6 @@
 {
   "name": "memphis-uix",
-  "version": "0.0.2-b",
+  "version": "0.0.2-a",
   "description": "A UI Component Library for React Web Apps!",
   "keywords": [
     "react ui",
@@ -9,6 +9,7 @@
   ],
   "author": "ahamedzoha",
   "license": "MIT",
+  "homepage": "https://memphis-ui.netlify.app/",
   "repository": "ahamedzoha/memphis-ui",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",

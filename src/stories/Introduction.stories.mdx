@@ -178,7 +178,7 @@ Clone the project in your local machine and follow the following steps:
 2. cd into root directory if you haven't.
 3. Run these commands:
 
-```
+```bash
 npm install
 
 npm run storybook
@@ -188,11 +188,38 @@ npm start
 
 4. On a new terminal, cd into the example folder and also do the following:
 
-```
+```bash
 npm install
 
 npm start
 ```
+
+## Usage
+
+**Example**
+
+```jsx
+import React from 'react'
+import { Card, Button } from 'memphis-uix'
+
+const App = () => (
+  <Button variant='primary'>
+    How's it going!{' '}
+    <span role='img' aria-label='smily'>
+      😄
+    </span>
+  </Button>
+)
+```
+
+_To see all the available props visit the Buttons story page_
+
+---
+
+<br />
+<br />
+
+#### NPM Homepage [Link](https://www.npmjs.com/package/memphis-uix)
 
 <div class='subheading'>Configure</div>
 
