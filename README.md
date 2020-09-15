@@ -1,3 +1,5 @@
+![Memphis UI Logo](/src/stories/assets/logo.png)
+
 # Welcome to memphis ui
 
 > An opinionated React JSX component library to do the heavy liftings for you

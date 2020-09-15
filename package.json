@@ -65,7 +65,6 @@
     "dist"
   ],
   "dependencies": {
-    "memphis-uix": "0.0.1-a",
     "node-sass": "^4.14.1",
     "react-docgen": "^5.3.0",
     "styled-components": "^5.2.0"
