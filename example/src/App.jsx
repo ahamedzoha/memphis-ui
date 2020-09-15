@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { ExampleComponent, Button, Card } from 'memphis-ui'
-// import { ZButton } from 'memphis-uix'
+import { ExampleComponent, Card, Button } from 'memphis-ui'
+// import { Button } from 'memphis-uix'
 import 'memphis-ui/dist/index.css'
 
 const App = () => {
