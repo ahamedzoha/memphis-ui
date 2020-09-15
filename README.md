@@ -43,14 +43,13 @@ npm install --save memphis-uix@latest
 This project is initiated using the create-react-library starter boilerplate. This was for easy library publishing to NPM.
 Afterwards, storybook was installed on top in order to visualize and test the components.
 
-In order to clone the project, please visit [memphis ui Github Repo](https://github.com/ahamedzoha/memphis-ui).
 Clone the project in your local machine and follow the following steps:
 
 1. Checkout develop branch if you're in master. (It usually has the latest commits).
 2. cd into root directory if you haven't.
 3. Run these commands:
 
-```
+```bash
 npm install
 
 npm run storybook
@@ -60,11 +59,35 @@ npm start
 
 4. On a new terminal, cd into the example folder and also do the following:
 
-```
+```bash
 npm install
 
 npm start
 ```
+
+## Usage
+
+**Visit [memphis ui storybook](https://memphis-ui.netlify.app/) to get an in-depth walkthrough on using the components**
+
+Example
+
+```jsx
+import React from 'react'
+import { Card, Button } from 'memphis-uix'
+
+const App = () => (
+  <Button variant='primary'>
+    How's it going!{' '}
+    <span role='img' aria-label='smily'>
+      😄
+    </span>
+  </Button>
+)
+```
+
+_To see all the available props visit the Buttons story page_
+
+#### NPM Homepage [Link](https://www.npmjs.com/package/memphis-uix)
 
 ## License
 
