@@ -2,7 +2,7 @@
 
 > An opinionated React JSX component library to do the heavy liftings for you
 
-[![NPM](https://img.shields.io/npm/v/memphis-ui.svg)](https://www.npmjs.com/package/memphis-ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/memphis-uix.svg)](https://www.npmjs.com/package/memphis-ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 All the components here have been designed from scratch with minimal dependency with other libraries.
 Notable libraries used in this project are:
